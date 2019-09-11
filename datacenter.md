@@ -80,7 +80,7 @@ Cost of datacenter outage and impact
 
 https://www.nefiber.com/blog/the-9000-per-minute-cost-data-center-outages/
 
-recent data center outage
+recent data center outage in Nissan 
 https://www.datacenterdynamics.com/news/power-outage-denver-data-center-took-down-services-nissan-north-america/
 
 Some major data center outage

@@ -62,5 +62,17 @@ E.Datacenter.8:
 
 major data center outages
 
+Cost of datacenter outage and impact
+
+https://www.nefiber.com/blog/the-9000-per-minute-cost-data-center-outages/
+
+recent data center outage
+https://www.datacenterdynamics.com/news/power-outage-denver-data-center-took-down-services-nissan-north-america/
+
+Some major data center outage
+https://www.computerworld.com/article/3412199/11-data-centre-disasters.html
+
+
+https://www.computerworld.com/article/3412199/11-data-centre-disasters.html#slide3
 
 

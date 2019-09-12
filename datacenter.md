@@ -1,3 +1,9 @@
+# Datacenter
+
+:o2: please use proper markdown with section headers for assignments
+
+:o2: please use proper urls
+
 E.Datacenter.2: Carbon footprint of data centers
 
 Microsoft San Antonio Texas data center

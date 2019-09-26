@@ -1,8 +1,8 @@
 deepak deopura fa19-516-168
 
 # Abstract
-•	AWS to/from Azure data transfer using APIs.
-•	Extended version can be push data in SQL base warehouse (for example snowflake warehouse. It may be out of scope for now for this project purpose.
+-AWS to/from Azure data transfer using APIs.
+-Extended version can be push data in SQL base warehouse (for example snowflake warehouse. It may be out of scope for now for this project purpose.
 
 # Objective
 Develop APIs to transfer data between AWS and Azure.
@@ -15,11 +15,11 @@ I would like to use this project opportunities when there are multiple clouds in
 TBD
 
 # Technology
-•	AWS
-•	Azure
-•	Python
-•	Cloudmesh storage
-•	REST API
+-	AWS
+-	Azure
+-	Python
+-	Cloudmesh storage
+-	REST API
 
 # Testing
 TBD

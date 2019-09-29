@@ -4,6 +4,9 @@ deepak deopura fa19-516-168
 
 :o2: please leran markdown
 
+:o2: this project has significant issues as tehchnology such as snowflake is use that does not provide a free tier. The 30 day free licensis is insufficient. Please chose a different technology for testing. However you can in addition to some other artifact certaily use snowflake, but it can ot be your main objective. When reading your comment you actually do understand the issue .... Maybe you can use MariaDB or something like that. Also remember you need to technically compare streaming vs backu and upload. What we found n AWS is that streaming for data takes 45 min while backing up and reload 2 minutes ....
+however we have not spend any time optimiszing this. This is storing images from aws into our cloudmesh mongodb
+
 ## Abstract
 
 - AWS to/from Azure data transfer using APIs.

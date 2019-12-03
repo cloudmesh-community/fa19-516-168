@@ -138,7 +138,13 @@ so you need lots of tests and smom minor benchmarks
 variable: cloudmesh storage providers: local, azure, aws, google (box)
 variable: data size: figure out what impact datasize has
 
+??? variable: where to plce the datawarese: local ???, aws warehose???, aws maridb???
+????
+
 usecase: is there a usecase that we can use that is not from your company? 
 Maybe something we can simulate, with files. 
 
+Evaluate what thsi does:
+
+* https://github.com/cloudmesh/cloudmesh-redshift (what is this,)
 

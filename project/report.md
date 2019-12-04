@@ -34,14 +34,13 @@ storing images from aws into our cloudmesh mongodb
 ## Abstract
 
 - AWS to/from Azure data transfer using APIs.
-
 - Extended version can be push data in SQL base warehouse (for example
   snowflake warehouse. It may be out of scope for now for this project
   purpose.
 
 ## Objective
 
-Develop APIs to transfer data between AWS and Azure.
+Develop APIs to transfer file data from AWS and Azure to cloud hosted database in AWS(MariaDB).
 
 
 
@@ -51,16 +50,28 @@ come up with a real motivation not just replication of snowflake
 
 use NIST OpenAPI specification for formulation abstract data ware housing services 
 
-showcase on an applocation
+- Learn about cloud base database warehouse and interaction with database from cloud or local machine
+- Learn about Open APIs
+- Understand data flow from/to cloud and database 
+showcase on an application
 
 
 ## Ternminology
 
-what is datwarehous
+what is data warehouse? 
+Data warehouse is used to collect data from multiple source system including RDBMS, transaction system, files and  and process data for analytical and decision support system.
+datawarehose is used for business reporting, historical data analysis, dashboarding for better decision support. 
 
-what is different to rdbs 
+what is different to rdbs ?
+RDBMS is relational database to support and record transaction.
 
 what is difference to ???
+Data warehouse purpose is to support analytics and reporting and does not need real time data. It is optimized for data querying.
+data is collected from multiple sources and processed to have single point of truth of data.
+Data model is mostly denormalized to have efficient query time.
+Transaction database purpose is to to record data transaction and it is optimized for insert/update then querying data.
+data model is highly normalized and data processing is real time. 
+
 
 what is NIST BDRA and how does it fit in this project
 
@@ -78,9 +89,9 @@ want to build warehouse based on various data sources across clouds.
 
 There are likely others
 
-what is aws doing or not
-what is azure doing or not
-what is google doing
+- what is aws doing or not? - AWS data warehosue solution is AWS Redshift
+- what is azure doing or not - Azure Synapse Analytics
+- what is google doing - BigQuery by Goolge cloud
 
 how daes streaming contrast this effort?
 
@@ -138,13 +149,13 @@ so you need lots of tests and smom minor benchmarks
 variable: cloudmesh storage providers: local, azure, aws, google (box)
 variable: data size: figure out what impact datasize has
 
-??? variable: where to plce the datawarese: local ???, aws warehose???, aws maridb???
+??? variable: where to place the datawarese: local ???, aws warehose???, aws maridb???
 ????
 
-usecase: is there a usecase that we can use that is not from your company? 
+use case: is there a usecase that we can use that is not from your company? 
 Maybe something we can simulate, with files. 
 
-Evaluate what thsi does:
+Evaluate what this does:
 
 * https://github.com/cloudmesh/cloudmesh-redshift (what is this,)
 

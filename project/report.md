@@ -9,19 +9,19 @@ he does only file based data sources.
 
 student will correct this in writeup. remember students form class have
 implemented various things in different clouds that can be leveraged,
-you willl have to develop likely one that is not yet done plus what you
+you will have to develop likely one that is not yet done plus what you
 do in this project. you can start with what students have implemented,
 look at awss3 provider, google, azure are forthcomming, local was notyet
 don, which you should use ;-) as this would allow you to simulate the
-dataware house locally as well as the db, thus speeding up your
+data warehouse locally as well as the db, thus speeding up your
 development due to limited time
 
 
 :o2: please learn markdown
 
-:o2: this project has significant issues as tehchnology such as
+:o2: this project has significant issues as technology such as
 snowflake is use that does not provide a free tier. The 30 day free
-licensis is insufficient. Please chose a different technology for
+licensises is insufficient. Please chose a different technology for
 testing. However you can in addition to some other artifact certaily use
 snowflake, but it can ot be your main objective. When reading your
 comment you actually do understand the issue .... Maybe you can use
@@ -38,11 +38,17 @@ storing images from aws into our cloudmesh mongodb
   snowflake warehouse. It may be out of scope for now for this project
   purpose.
 
+## New Abstract
+- Connect ot Azure synapse data warehouse and use cm commands to interact with it
+- Azure sysapse scale-up/scale-out using command
+- Read /write data in Azure synapse database using files
+
 ## Objective
 
 Develop APIs to transfer file data from AWS and Azure to cloud hosted database in AWS(MariaDB).
 
-
+## New Objective
+develop APIs to interact with Azure synapse data warehouse
 
 ## Motivation
 
@@ -53,10 +59,12 @@ use NIST OpenAPI specification for formulation abstract data ware housing servic
 - Learn about cloud base database warehouse and interaction with database from cloud or local machine
 - Learn about Open APIs
 - Understand data flow from/to cloud and database 
+- Learn and compare data warehouse services provided my Azure and other (AWS/Google)) cloud providers
+
 showcase on an application
 
 
-## Ternminology
+## Terminology
 
 what is data warehouse? 
 Data warehouse is used to collect data from multiple source system including RDBMS, transaction system, files and  and process data for analytical and decision support system.
@@ -89,19 +97,19 @@ want to build warehouse based on various data sources across clouds.
 
 There are likely others
 
-- what is aws doing or not? - AWS data warehosue solution is AWS Redshift
-- what is azure doing or not - Azure Synapse Analytics
-- what is google doing - BigQuery by Goolge cloud
+- what is aws doing or not? - AWS data warehouse solution is AWS Redshift
+- what is azure doing or not - Azure Synapse Analytics isn sql base data warehouse and analytics solution by Azure
+- what is google doing - BigQuery by Goolge cloud solution for data warehouse
 
-how daes streaming contrast this effort?
+how does streaming contrast this effort?
 
 ## Architecture
 
 Definition of an OPenAPI for datawarehousing
-
+Programmatically control warehouse clusters, scale up and scale out of machines and perform database administration, DDL and DML commands. 
 Limitations
 
-Are ther existing efforts?
+Are there existing efforts?
 
 TBD
 
@@ -114,7 +122,8 @@ TBD
 * NIST Cloudmesh Database abstraction (done by other student of this class Harsha, look up report)
 * NIST REST API
 
-### OPenAPI
+
+### OpenAPI
 
 TBD link to spec
 
@@ -124,7 +133,7 @@ TBD link to spec
 * specify how to run
 * implement for 2 database technologies as it otherwise does not make sense
 * as students have likely figured out how to start databases on various cloud 
-  you ols have to show hwo to host the database on the cloud (this last step 
+  you also have to show how to host the database on the cloud (this last step 
   may prevent you from completing in time, as it requires some experimenting 
   on your part, but as you said you have experience, this should not be 
   an issue.
@@ -132,7 +141,7 @@ TBD link to spec
 
 ### Manual
 
-Describe how to run while making as much as possibe automated
+Describe how to run while making as much as possible automated
 e.g. cms sys command generate ... (excersie from class)
 
 ## Testing
@@ -142,20 +151,27 @@ best done with kubernetes as you do have windows.
 
 do benchmarks also with various size of data
 
-so you need lots of tests and smom minor benchmarks
+so you need lots of tests and some minor benchmarks
 
 ## benchmarks
 
 variable: cloudmesh storage providers: local, azure, aws, google (box)
 variable: data size: figure out what impact datasize has
-
 ??? variable: where to place the datawarese: local ???, aws warehose???, aws maridb???
 ????
 
 use case: is there a usecase that we can use that is not from your company? 
 Maybe something we can simulate, with files. 
 
+Some of use cases of cloud based data warehouse
+* Use cloud scale up to run heavy data load job 
+* Use scale out to support multiple queries from user for better performance
+* Able to programmatically control data warehouse based on job size and load on system
+
 Evaluate what this does:
 
 * https://github.com/cloudmesh/cloudmesh-redshift (what is this,)
+This package is used to interact with AWS redshift data warehouse. It is used to externally interact with redshif cluster, increase size of cluster, rename cluster, change password etc.  
+It also allow used to do basic DDL and DML operation on database hosted on redshift.
 
+I think objective of my project can be slightly changed to interact with Azure data warehouse. We have implementation in cloudmesh for storage, compute, database. We can similarly have implementation for all datawarehouse services provided by different cloud provide. As redshift is already implementated so my project can be focused to include Azure data warehouse in cloudmesh bundle.

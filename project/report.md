@@ -48,7 +48,7 @@ storing images from aws into our cloudmesh mongodb
 Develop APIs to transfer file data from AWS and Azure to cloud hosted database in AWS(MariaDB).
 
 ## New Objective
-develop APIs to interact with Azure synapse data warehouse
+Develop APIs to interact with Google Bigquery data warehouse 
 
 ## Motivation
 
@@ -56,10 +56,10 @@ come up with a real motivation not just replication of snowflake
 
 use NIST OpenAPI specification for formulation abstract data ware housing services 
 
-- Learn about cloud base database warehouse and interaction with database from cloud or local machine
+- Learn about various data warehouse solution provided by major cloud provide (AWS,Azure,Google)
+- Learn to work with cloud base datawarehouse and interaction with datawarehouse from cloud or local machine
 - Learn about Open APIs
-- Understand data flow from/to cloud and database 
-- Learn and compare data warehouse services provided my Azure and other (AWS/Google)) cloud providers
+- Understand data flow from/to datawarehouse, cloud and local
 
 showcase on an application
 
@@ -79,7 +79,6 @@ data is collected from multiple sources and processed to have single point of tr
 Data model is mostly denormalized to have efficient query time.
 Transaction database purpose is to to record data transaction and it is optimized for insert/update then querying data.
 data model is highly normalized and data processing is real time. 
-
 
 what is NIST BDRA and how does it fit in this project
 
@@ -113,12 +112,20 @@ Are there existing efforts?
 
 TBD
 
+##Cloudbased datawareouse solution comparison
+Datawarehouse solution can be compared based on some of following parameters
+* Ability to scale up or scale out without affecting data. So that datawarehouse can be scale up for high load data job or scale out to support concurrent jobs
+* Independent of storage and compute
+* Type of supported data like structural, JSON, semi structured, unstructured
+* SQL and other support for easiness to query data
+
+
 ## Technology
 
 * AWS
 * Azure
 * Python
-* Cloudmesh storage
+* Cloudmesh storage and databse
 * NIST Cloudmesh Database abstraction (done by other student of this class Harsha, look up report)
 * NIST REST API
 
@@ -173,5 +180,17 @@ Evaluate what this does:
 * https://github.com/cloudmesh/cloudmesh-redshift (what is this,)
 This package is used to interact with AWS redshift data warehouse. It is used to externally interact with redshif cluster, increase size of cluster, rename cluster, change password etc.  
 It also allow used to do basic DDL and DML operation on database hosted on redshift.
-
 I think objective of my project can be slightly changed to interact with Azure data warehouse. We have implementation in cloudmesh for storage, compute, database. We can similarly have implementation for all datawarehouse services provided by different cloud provide. As redshift is already implementated so my project can be focused to include Azure data warehouse in cloudmesh bundle.
+We can build cloudmesh package for datawarehose from various cloude provide ( similar to cloudmesh-storage , cloudmesh-compute etc)
+
+## Progress
+- Installed cloudmesh on Windows 10
+- Created cloud account on AWS, AZURE and Google
+- Compared various data warehouse solution provided by major clod provider (AWS- redshift,Azure-Synapse,Google-BigQuery)
+- Created sample data base on BigQuery,Azure Synapse and AWS red shift
+- Checked for Python libraries require to connect to BigQuery,Redshift and Azure warehouses
+
+##Reference
+https://docs.microsoft.com/en-us/azure/sql-data-warehouse/
+https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html
+https://cloud.google.com/bigquery/docs/

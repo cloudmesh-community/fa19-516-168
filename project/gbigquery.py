@@ -14,6 +14,7 @@ def samlequery():
 
 def listdatasets():
     datasets = list(client.list_datasets())
+
     project = client.project
     if datasets:
         print("Datasets in project {}:".format(project))
@@ -25,6 +26,28 @@ def listdatasets():
 def createdataset():
     print("creating dataset")
 
-listdatasets()
+def loaddata():
+    print("Loading data")
+    #client = bigquery.Client()
+    filename = '/empsample.csv'
+    dataset_id = 'cmddeopura:emp_table'
+    table_id = 'cmddeopura:emp_table.employee_table'
+
+    dataset_ref = client.dataset(dataset_id)
+    table_ref = dataset_ref.table(table_id)
+    job_config = bigquery.LoadJobConfig()
+    job_config.source_format = bigquery.SourceFormat.CSV
+    job_config.skip_leading_rows = 1
+    job_config.autodetect = True
+
+    with open(filename, "rb") as source_file:
+        job = client.load_table_from_file(source_file, table_ref, job_config=job_config)
+
+    job.result()  # Waits for table load to complete.
+
+    print("Loaded {} rows into {}:{}.".format(job.output_rows, dataset_id, table_id))
+
+#listdatasets()
 #samlequery()
 
+loaddata()

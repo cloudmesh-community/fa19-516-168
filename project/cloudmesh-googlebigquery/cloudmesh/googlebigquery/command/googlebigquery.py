@@ -18,7 +18,6 @@ class GooglebigqueryCommand(PluginCommand):
         Usage:
         bigquery create dataset
         bigquery list dataset
-        bigquery delete dataset
         bigquery create table
         bigquery list tables
         bigquery delete table

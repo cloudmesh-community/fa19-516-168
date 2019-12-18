@@ -2,6 +2,7 @@
 
 Deepak Deopura fa19-516-168
 
+:o2: progress unclear
 
 Gregor thought originally 2 differnt databases are on the data sources 
 but that may not be the case ??? as clarification was done by student 

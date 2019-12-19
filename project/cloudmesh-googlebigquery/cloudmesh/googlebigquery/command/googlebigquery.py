@@ -16,19 +16,26 @@ class GooglebigqueryCommand(PluginCommand):
         ::
 
         Usage:
-        bigquery create dataset
-        bigquery list dataset
-        bigquery create table
-        bigquery list tables
-        bigquery delete table
-        bigquery insert into table
-        bigquery load table
-        bigquery runquery
-        bigquery create job
-        bigquery list jobs
-        bigquery schedule job
-        bigquery run job
+        bigquery create [DATASET_ID]
+        bigquery list [PROJECT_ID]
+        bigquery delete [DATASET_ID]
+        bigquery listtables PROJECT_ID DATASET_ID
+        #bigquery deletetable PROJECT_ID DATASET_ID [TABLE_ID]
+        #bigquery insert into table
+        bigquery loadtable SOURCE PROJECT_ID DATASET_ID [TABLE_ID]
+        bigquery exporttable SOURCE PROJECT_ID DATASET_ID [TABLE_ID]
+        bigquery runquery PROJECT_ID DATASET_ID [TABLE_ID]
+        bigquery listjob [PROJECT_ID]
+
+
+        Arguments:
+            DATASET_ID              The Google bigquery dataset id.
+            PROJECT_ID              The google big query project id
+            TABLE_NAME              The name of the table
+            JOB_ID                  The job id in bigquery
+            SOURCE                  Local file which need to be load into bigquery table
         """
+
         arguments.FILE = arguments['--file'] or None
 
         VERBOSE(arguments)

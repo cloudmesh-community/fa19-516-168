@@ -191,6 +191,7 @@ We can build cloudmesh package for datawarehose from various cloude provide ( si
 - Created sample data base on BigQuery,Azure Synapse and AWS red shift
 - Checked for Python libraries require to connect to BigQuery,Redshift and Azure warehouses
 - Created functions to run queries from python
+
 ##Reference
 https://docs.microsoft.com/en-us/azure/sql-data-warehouse/
 https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html

@@ -152,6 +152,47 @@ TBD link to spec
 Describe how to run while making as much as possible automated
 e.g. cms sys command generate ... (excersie from class)
 
+    
+        Usage:
+        googlebigquery create [DATASET_ID] [PROJECT_ID]
+        googlebigquery list [PROJECT_ID]
+        googlebigquery delete [DATASET_ID] [PROJECT_ID]
+        googlebigquery listtables PROJECT_ID DATASET_ID
+        googlebigquery loadtable SOURCE PROJECT_ID DATASET_ID [TABLE_ID]
+        googlebigquery exporttable SOURCE PROJECT_ID DATASET_ID [TABLE_ID]
+        googlebigquery runquery PROJECT_ID DATASET_ID [TABLE_ID] [QUERY_TXT]
+        googlebigquery listjob [PROJECT_ID]
+
+
+        Arguments:
+            DATASET_ID              The Google bigquery dataset id.
+            PROJECT_ID              The google big query project id
+            TABLE_NAME              The name of the table
+            JOB_ID                  The job id in bigquery
+            SOURCE                  Local file which need to be load into bigquery table
+
+        Description:
+            googlebigquery create [DATASET_ID] [PROJECT_ID]
+                Create a dataset in given project
+
+            googlebigquery list [PROJECT_ID]
+                List all datasets present in given project_id
+
+            googlebigquery delete [DATASET_ID] [PROJECT_ID]
+                Delete dataset from given project
+
+            googlebigquery listtables PROJECT_ID DATASET_ID
+                List all tables from given dataset and project
+
+            googlebigquery loadtable SOURCE PROJECT_ID DATASET_ID [TABLE_ID]
+                Lod source file into given table
+
+            googlebigquery runquery PROJECT_ID DATASET_ID [TABLE_ID] [QUERY_TXT]
+                run given QUERY_TXT
+            
+            googlebigquery listjob [PROJECT_ID]
+            List all jobs present in given project_id
+
 ## Testing
 
 develop pytests that automate testing you prg and service work, 

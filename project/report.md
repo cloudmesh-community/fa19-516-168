@@ -4,6 +4,8 @@ Deepak Deopura fa19-516-168
 
 :o2: progress unclear
 
+:o2: use proper spaces after ,
+
 Gregor thought originally 2 differnt databases are on the data sources 
 but that may not be the case ??? as clarification was done by student 
 he does only file based data sources.

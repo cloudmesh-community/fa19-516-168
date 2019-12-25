@@ -34,19 +34,20 @@ storing images from aws into our cloudmesh mongodb
 
 ## Abstract
 
-- AWS to/from Azure data transfer using APIs.
-- Extended version can be push data in SQL base warehouse (for example
+* AWS to/from Azure data transfer using APIs.
+* Extended version can be push data in SQL base warehouse (for example
   snowflake warehouse. It may be out of scope for now for this project
   purpose.
 
 ## New Abstract
-- Connect ot Azure synapse data warehouse and use cm commands to interact with it
-- Azure sysapse scale-up/scale-out using command
-- Read /write data in Azure synapse database using files
+* Connect ot Azure synapse data warehouse and use cm commands to interact with it
+* Azure sysapse scale-up/scale-out using command
+* Read /write data in Azure synapse database using files
 
 ## Objective
 
-Develop APIs to transfer file data from AWS and Azure to cloud hosted database in AWS(MariaDB).
+Develop APIs to transfer file data from AWS and Azure to cloud hosted
+database in AWS(MariaDB).
 
 ## New Objective
 Develop APIs to interact with Google Bigquery data warehouse 
@@ -55,12 +56,15 @@ Develop APIs to interact with Google Bigquery data warehouse
 
 come up with a real motivation not just replication of snowflake
 
-use NIST OpenAPI specification for formulation abstract data ware housing services 
+use NIST OpenAPI specification for formulation abstract data ware
+housing services
 
-- Learn about various data warehouse solution provided by major cloud provide (AWS,Azure,Google)
-- Learn to work with cloud base datawarehouse and interaction with datawarehouse from cloud or local machine
-- Learn about Open APIs
-- Understand data flow from/to datawarehouse, cloud and local
+* Learn about various data warehouse solution provided by major cloud 
+  provide (AWS,Azure,Google)
+* Learn to work with cloud base datawarehouse and interaction with 
+  datawarehouse from cloud or local machine
+* Learn about Open APIs
+* Understand data flow from/to datawarehouse, cloud and local
 
 showcase on an application
 
@@ -68,18 +72,25 @@ showcase on an application
 ## Terminology
 
 what is data warehouse? 
-Data warehouse is used to collect data from multiple source system including RDBMS, transaction system, files and  and process data for analytical and decision support system.
-datawarehose is used for business reporting, historical data analysis, dashboarding for better decision support. 
+
+Data warehouse is used to collect data from multiple source system
+including RDBMS, transaction system, files and  and process data for
+analytical and decision support system. datawarehose is used for
+business reporting, historical data analysis, dashboarding for better
+decision support.
 
 what is different to rdbs ?
 RDBMS is relational database to support and record transaction.
 
 what is difference to ???
-Data warehouse purpose is to support analytics and reporting and does not need real time data. It is optimized for data querying.
-data is collected from multiple sources and processed to have single point of truth of data.
-Data model is mostly denormalized to have efficient query time.
-Transaction database purpose is to to record data transaction and it is optimized for insert/update then querying data.
-data model is highly normalized and data processing is real time. 
+
+Data warehouse purpose is to support analytics and reporting and does
+not need real time data. It is optimized for data querying. data is
+collected from multiple sources and processed to have single point of
+truth of data. Data model is mostly denormalized to have efficient query
+time. Transaction database purpose is to to record data transaction and
+it is optimized for insert/update then querying data. data model is
+highly normalized and data processing is real time.
 
 what is NIST BDRA and how does it fit in this project
 
@@ -88,7 +99,7 @@ what is NIST BDRA and how does it fit in this project
 Snowflake:
 
 Motivation of this project is from *Snowflake cloud warehouse*
-(https://www.snowflake.com) . I am using snowflake cloud base warehouse
+(<https://www.snowflake.com>) . I am using snowflake cloud base warehouse
 form some of my clients. Snowflake is currently providing most of their
 services in AWS. They are also increasing their footprint in Azure and
 will soon start on Google cloud. I would like to use this project
@@ -97,25 +108,32 @@ want to build warehouse based on various data sources across clouds.
 
 There are likely others
 
-- what is aws doing or not? - AWS data warehouse solution is AWS Redshift
-- what is azure doing or not - Azure Synapse Analytics isn sql base data warehouse and analytics solution by Azure
-- what is google doing - BigQuery by Goolge cloud solution for data warehouse
+* what is aws doing or not? AWS data warehouse solution is AWS Redshift
+
+* what is azure doing or not? Azure Synapse Analytics isn sql base data
+* warehouse and analytics solution by Azure
+
+* what is google doing? BigQuery by Goolge cloud solution for data
+* warehouse
 
 how does streaming contrast this effort?
 
 ## Architecture
 
-Definition of an OPenAPI for datawarehousing
-Programmatically control warehouse clusters, scale up and scale out of machines and perform database administration, DDL and DML commands. 
-Limitations
+Definition of an OPenAPI for datawarehousing Programmatically control
+warehouse clusters, scale up and scale out of machines and perform
+database administration, DDL and DML commands. Limitations
 
 Are there existing efforts?
 
 TBD
 
-##Cloudbased datawareouse solution comparison
+## Cloudbased datawareouse solution comparison
+
 Datawarehouse solution can be compared based on some of following parameters
-* Ability to scale up or scale out without affecting data. So that datawarehouse can be scale up for high load data job or scale out to support concurrent jobs
+* Ability to scale up or scale out without affecting data. So that 
+  datawarehouse can be scale up for high load data job or scale out 
+  to support concurrent jobs
 * Independent of storage and compute
 * Type of supported data like structural, JSON, semi structured, unstructured
 * SQL and other support for easiness to query data
@@ -127,7 +145,8 @@ Datawarehouse solution can be compared based on some of following parameters
 * Azure
 * Python
 * Cloudmesh storage and databse
-* NIST Cloudmesh Database abstraction (done by other student of this class Harsha, look up report)
+* NIST Cloudmesh Database abstraction (done by other student of this 
+  class Harsha, look up report)
 * NIST REST API
 
 
@@ -140,11 +159,12 @@ TBD link to spec
 * specify the operationID's
 * specify how to run
 * implement for 2 database technologies as it otherwise does not make sense
-* as students have likely figured out how to start databases on various cloud 
-  you also have to show how to host the database on the cloud (this last step 
-  may prevent you from completing in time, as it requires some experimenting 
-  on your part, but as you said you have experience, this should not be 
-  an issue.
+
+* as students have likely figured out how to start databases on various
+  cloud you also have to show how to host the database on the cloud
+  (this last step may prevent you from completing in time, as it
+  requires some experimenting on your part, but as you said you have
+  experience, this should not be an issue.
   
 
 ### Manual
@@ -219,21 +239,34 @@ Some of use cases of cloud based data warehouse
 
 Evaluate what this does:
 
-* https://github.com/cloudmesh/cloudmesh-redshift (what is this,)
-This package is used to interact with AWS redshift data warehouse. It is used to externally interact with redshif cluster, increase size of cluster, rename cluster, change password etc.  
-It also allow used to do basic DDL and DML operation on database hosted on redshift.
-I think objective of my project can be slightly changed to interact with Azure data warehouse. We have implementation in cloudmesh for storage, compute, database. We can similarly have implementation for all datawarehouse services provided by different cloud provide. As redshift is already implementated so my project can be focused to include Azure data warehouse in cloudmesh bundle.
-We can build cloudmesh package for datawarehose from various cloude provide ( similar to cloudmesh-storage , cloudmesh-compute etc)
+* <https://github.com/cloudmesh/cloudmesh-redshift> (what is this,)
+
+This package is used to interact with AWS redshift data warehouse. It is
+used to externally interact with redshif cluster, increase size of
+cluster, rename cluster, change password etc. It also allow used to do
+basic DDL and DML operation on database hosted on redshift. I think
+objective of my project can be slightly changed to interact with Azure
+data warehouse. We have implementation in cloudmesh for storage,
+compute, database. We can similarly have implementation for all
+datawarehouse services provided by different cloud provide. As redshift
+is already implementated so my project can be focused to include Azure
+data warehouse in cloudmesh bundle. We can build cloudmesh package for
+datawarehose from various cloude provide ( similar to cloudmesh-storage,
+cloudmesh-compute etc)
 
 ## Progress
-- Installed cloudmesh on Windows 10
-- Created cloud account on AWS, AZURE and Google
-- Compared various data warehouse solution provided by major clod provider (AWS- redshift,Azure-Synapse,Google-BigQuery)
-- Created sample data base on BigQuery,Azure Synapse and AWS red shift
-- Checked for Python libraries require to connect to BigQuery,Redshift and Azure warehouses
-- Created functions to run queries from python
 
-##Reference
-https://docs.microsoft.com/en-us/azure/sql-data-warehouse/
-https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html
-https://cloud.google.com/bigquery/docs/
+* Installed cloudmesh on Windows 10
+* Created cloud account on AWS, AZURE and Google
+* Compared various data warehouse solution provided by major clod 
+  provider (AWS redshift,Azure-Synapse,Google-BigQuery)
+* Created sample data base on BigQuery,Azure Synapse and AWS red shift
+* Checked for Python libraries require to connect to BigQuery, Redshift 
+  and Azure warehouses
+* Created functions to run queries from python
+
+## Reference
+
+* <https://docs.microsoft.com/en-us/azure/sql-data-warehouse/>
+* <https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html>
+* <https://cloud.google.com/bigquery/docs/>

@@ -21,10 +21,10 @@ example as ssume wa have a servic A runnning on aws, B Google, C Azure, all of t
 
 We tan develop 
 
-X.Provider.py
-X.A.Provider.py -> interfaces to A
-X.B.Provider.py -> interfaces to B
-X.C.Provider.py -> interfaces to B
+      X.Provider.py
+      X.A.Provider.py -> interfaces to A
+      X.B.Provider.py -> interfaces to B
+      X.C.Provider.py -> interfaces to B
 
 How this is doen is provided as a detailed example in cloudmesh for compute and storage
 
@@ -36,13 +36,13 @@ So first you have to define a command that works across all of the services lets
 
 but what you need is 
 
-X --service=google .... REST OF COMMNAD WHICH IS MOSTLY THE SAME FOR ALL ...
+      X --service=google .... REST OF COMMNAD WHICH IS MOSTLY THE SAME FOR ALL ...
 
 Now i can call 
 
-X --service=A .... REST OF COMMNAD WHICH IS MOSTLY THE SAME FOR ALL ...
-X --service=B .... REST OF COMMNAD WHICH IS MOSTLY THE SAME FOR ALL ...
-X --service=C .... REST OF COMMNAD WHICH IS MOSTLY THE SAME FOR ALL ...
+      X --service=A .... REST OF COMMNAD WHICH IS MOSTLY THE SAME FOR ALL ...
+      X --service=B .... REST OF COMMNAD WHICH IS MOSTLY THE SAME FOR ALL ...
+      X --service=C .... REST OF COMMNAD WHICH IS MOSTLY THE SAME FOR ALL ...
 
 * the bigtable command is just letting meaccess an existing table, but does not allow to define one?
 
@@ -54,21 +54,21 @@ X --service=C .... REST OF COMMNAD WHICH IS MOSTLY THE SAME FOR ALL ...
 
 If you do not do datawarehouse it can be replaced with any other thing
 
-cloudmesh/datawarehouse/
-   ProviderAPC.py
-   google/Provider.py
-   aws/Provider.py
-   azure/Provider.py
-   azure/Provider.py
-   serviceA/Provider.py
-   command/
-      datawarehouse.py
+      cloudmesh/datawarehouse/
+         ProviderAPC.py
+         google/Provider.py
+         aws/Provider.py
+         azure/Provider.py
+         azure/Provider.py
+         serviceA/Provider.py
+         command/
+            datawarehouse.py
 
 The command can be generated with cms sys command generate datawarehouse
 
 * To add the rest service you likely want 
 
-  cloudmesh/datawarehouse/rest/...
+      cloudmesh/datawarehouse/rest/...
 
 But it may be likely that you dont get to that point if the Providers turn out to be difficult to abstract
 

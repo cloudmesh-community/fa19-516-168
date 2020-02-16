@@ -1,10 +1,10 @@
-# Datacenter
+# Datacenter fa19-516-168
 
 :o2: please use proper markdown with section headers for assignments
 
 :o2: please use proper urls
 
-E.Datacenter.2: Carbon footprint of data centers
+## E.Datacenter.2: Carbon footprint of data centers
 
 Microsoft San Antonio Texas data center
 
@@ -17,26 +17,33 @@ Used carbon footprint calculator
 4402379
 
 Added inofrmation in link
-https://docs.google.com/spreadsheets/d/1gh869zfjA4sVxL8-ga0af2_HLTTuOoD1IReuRSrbq4I/edit#gid=0
+
+<https://docs.google.com/spreadsheets/d/1gh869zfjA4sVxL8-ga0af2_HLTTuOoD1IReuRSrbq4I/edit#gid=0>
 
 Reference 
-http://worldstopdatacenters.com/microsoft-san-antonio-tx/
-https://www3.epa.gov/carbon-footprint-calculator/
-https://www.fujifilmusa.com/products/tape_data_storage/case_studies/pdf/Hyperscale_Heat_Wave.pdf
 
+<http://worldstopdatacenters.com/microsoft-san-antonio-tx/>
 
-E.Datacenter.2.b: Table
+<https://www3.epa.gov/carbon-footprint-calculator/>
+
+<https://www.fujifilmusa.com/products/tape_data_storage/case_studies/pdf/Hyperscale_Heat_Wave.pdf>
+
+## E.Datacenter.2.b: Table
+
 Added information of in datacenter.md file
 
-E.Datacenter.3: Your own Carbon footprint
+## E.Datacenter.3: Your own Carbon footprint
+
 My Carbon footprint
 14675
 
 Added information in link
-https://docs.google.com/spreadsheets/d/1gh869zfjA4sVxL8-ga0af2_HLTTuOoD1IReuRSrbq4I/edit#gid=314181983
+
+<https://docs.google.com/spreadsheets/d/1gh869zfjA4sVxL8-ga0af2_HLTTuOoD1IReuRSrbq4I/edit#gid=314181983>
 
 
-E.Datacenter.4:
+## E.Datacenter.4:
+
 renewal energy - Others
 
 Bio Energy
@@ -52,10 +59,11 @@ Agricultural crops and waste materials—burned as a fuel or converted to liquid
 Food, yard, and wood waste in garbage—burned to generate electricity in power plants or converted to biogas in landfills
 Animal manure and human sewage—converted to biogas, which can be burned as a fuel"
 
-reference : https://www.eia.gov/energyexplained/biomass/
+reference : <https://www.eia.gov/energyexplained/biomass/>
 
 Waste heat in datacenters
-https://en.wikipedia.org/wiki/Green_data_center#Reusing_waste_heat
+
+<https://en.wikipedia.org/wiki/Green_data_center#Reusing_waste_heat>
 
 "Reusing waste heat
 Data centers use electric power, releasing more than 98 percent of this electricity as heat. Waste heat can be actively reused, and a data center becomes a closed-loop heating system with no waste. Examples include:
@@ -67,15 +75,17 @@ Amazon reused heat from a nearby data center for a biosphere project in Seattle.
 
 
 
-E.Datacenter.5: 
+## E.Datacenter.5: 
+
 Pick a country, state, or company from Section 4.1.11 and summarize
 their efforts towards renewable energy and impacts within the
 society
 
 "Microsoft showed its dedication to green energy when it invested in a 20 year agreement RES Americas wind farm for 100% of its energy.  By the end of 2015 the Keechi Wind Farm Project will contain 55 turbines capable of handling the 300 megawatts of power that the San Antonio, Texas data center will need. This data center was modeled after the Microsoft facility in Quincy, Washington. At this location Microsoft hosts applications such as Microsoft.com, Hotmail, and Windows Live Messenger."
 
-https://www.fujifilmusa.com/products/tape_data_storage/case_studies/pdf/Hyperscale_Heat_Wave.pdf
-http://worldstopdatacenters.com/microsoft-san-antonio-tx/
+<https://www.fujifilmusa.com/products/tape_data_storage/case_studies/pdf/Hyperscale_Heat_Wave.pdf>
+
+<http://worldstopdatacenters.com/microsoft-san-antonio-tx/>
 
 
 E.Datacenter.8:
@@ -84,14 +94,16 @@ major data center outages
 
 Cost of datacenter outage and impact
 
-https://www.nefiber.com/blog/the-9000-per-minute-cost-data-center-outages/
+<https://www.nefiber.com/blog/the-9000-per-minute-cost-data-center-outages/>
 
 recent data center outage in Nissan 
-https://www.datacenterdynamics.com/news/power-outage-denver-data-center-took-down-services-nissan-north-america/
+
+<https://www.datacenterdynamics.com/news/power-outage-denver-data-center-took-down-services-nissan-north-america/>
 
 Some major data center outage
-https://www.computerworld.com/article/3412199/11-data-centre-disasters.html
 
-https://www.computerworld.com/article/3412199/11-data-centre-disasters.html#slide3
+<https://www.computerworld.com/article/3412199/11-data-centre-disasters.html>
+
+<https://www.computerworld.com/article/3412199/11-data-centre-disasters.html#slide3>
 
 

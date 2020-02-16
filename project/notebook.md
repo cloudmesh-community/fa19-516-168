@@ -1,7 +1,7 @@
 * Deepak Deopura, fa19-516-168
 * Gregor von Laszewski
 
-##Plan
+#Plan
 + Created new_md file for project details (https://github.com/cloudmesh-community/fa19-516-168/blob/master/project/report_new.md)
 + Project objective is to develop Cloudmesh commands to interact with Google BigQuery, a cloud based datawarehouse solution
 + Following is plan to complete project
